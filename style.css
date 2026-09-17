@@ -1,0 +1,755 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #a89f94;
+  color: #222;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+/* Fluid headings: scale smoothly with viewport instead of jumping
+   at fixed breakpoints, so text never feels oversized on small phones
+   or undersized on large screens. */
+.display-4 {
+  font-size: clamp(1.9rem, 6vw, 3.5rem);
+}
+
+.display-5 {
+  font-size: clamp(1.7rem, 5.5vw, 3rem);
+}
+
+.navbar {
+  background-color: #a89f94;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+ 
+}
+
+.navbar-brand {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.45rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #ffffff !important;
+  text-transform: uppercase;
+}
+
+
+
+.showcase {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.45rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #ffffff !important;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.Textile {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.45rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #ffffff !important;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+
+
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 400;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-left: 0.85rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #f0e9e0 !important;
+}
+
+.navbar-toggler {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 0.4rem 0.65rem;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  display: none;
+}
+
+.hero-img {
+  height: 85vh;
+  height: 85dvh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.72);
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+.carousel-caption {
+  bottom: 16%;
+  left: 0;
+  right: 0;
+  text-align: left;
+}
+
+.carousel-caption h1 {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+}
+
+.category-card {
+  background: transparent;
+  text-align: center;
+}
+
+.category-card img {
+  width: 100%;
+  height: 85vh;
+  height: 85dvh;
+  min-height: 520px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.category-card .btn {
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.nina {
+  width: 80%;
+  height: 260px;
+  min-height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card {
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.card-img-top {
+  height: 260px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  background: #1a1a1a;
+}
+
+.btn-dark {
+  background-color: #111;
+  border-color: #111;
+}
+
+
+.about-text {
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.words {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 40px;
+    text-align: left;
+  
+}
+
+@media (max-width: 768px) {
+  .words {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .words {
+    font-size: 18px;
+  }
+}
+
+/* About section photo: sized on its own terms (not the tall
+   full-bleed treatment used for hero/category banners) so it sits
+   comfortably next to the bio text instead of towering over it. */
+.about-photo {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.about-photo img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: center 25%;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .about-photo img {
+    height: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-photo img {
+    height: 260px;
+  }
+}
+
+/* ---------- Contact page ---------- */
+
+.contact-hero {
+  background: linear-gradient(135deg, #1c1a18 0%, #3a332c 55%, #5b4c3d 100%);
+}
+
+.kicker {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #d8cfc2;
+  margin-bottom: 0.5rem;
+}
+
+.hero-divider {
+  width: 60px;
+  height: 3px;
+  background: #a89f94;
+  margin: 16px auto 18px;
+  border-radius: 2px;
+}
+
+.section-heading {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #2a2a2a;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 2.25rem 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.14);
+}
+
+.contact-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: #a89f94;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+.map-frame {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+  border: 4px solid #fff;
+}
+
+.info-panel {
+  background: #fff;
+  border-radius: 14px;
+  padding: 2rem 1.75rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.hours-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+.hours-list li:last-child {
+  border-bottom: none;
+}
+
+.hours-list li span:first-child {
+  font-weight: 600;
+  color: #2a2a2a;
+}
+
+.hours-list li span:last-child {
+  color: #6c757d;
+}
+
+.social-row {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #a89f94;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.social-icon:hover {
+  background: #2a2a2a;
+  color: #fff;
+  transform: translateY(-4px);
+}
+
+@media (max-width: 480px) {
+  .contact-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .contact-icon {
+    width: 54px;
+    height: 54px;
+    font-size: 1.35rem;
+  }
+
+  .info-panel {
+    padding: 1.5rem 1.25rem;
+  }
+}
+
+/* Tailor avatar placeholder (replaces broken empty img src) */
+.avatar-placeholder {
+  width: 90px;
+  height: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a89f94;
+  color: #ffffff;
+  font-size: 2.2rem;
+}
+
+
+/* Tablet gap fix: scale hero/category images down before the phone breakpoint kicks in */
+@media (max-width: 991.98px) and (min-width: 769px) {
+  .hero-img {
+    height: 75vh;
+    height: 75dvh;
+  }
+
+  .category-card img {
+    height: 75vh;
+    height: 75dvh;
+    min-height: 450px;
+  }
+}
+
+/* "Our Collection" grid: keep the Men/Women photos side by side at
+   every width, same as desktop. Below tablet size the two banner
+   images no longer have room to stay tall without becoming thin,
+   distorted-looking strips, so their height is scaled down here to
+   keep a sensible proportion for a 2-up layout. This only touches
+   the Our Collection grid — the hero carousel and the single About
+   section photo keep their full-bleed height everywhere. */
+@media (max-width: 768px) {
+  .collection-grid .category-card img {
+    height: 46vw;
+    min-height: 170px;
+    max-height: 320px;
+  }
+
+  .collection-grid .category-card .btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.9rem;
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .collection-grid .category-card .btn {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.7rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #a89f94;
+    margin-top: 0.7rem;
+    padding: 0.5rem 0.75rem 1rem;
+    border-radius: 8px;
+  }
+
+  .nav-link {
+    margin-left: 0;
+    padding: 0.75rem 0.2rem !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .navbar-nav .btn {
+    margin-top: 0.75rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.1rem;
+    letter-spacing: 1.4px;
+  }
+
+  .hero-img {
+    height: 70vh;
+    height: 70dvh;
+  }
+
+  .carousel-caption {
+    bottom: 10%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.8rem;
+  }
+
+  .category-card img {
+    height: 70vh;
+    height: 70dvh;
+    min-height: 380px;
+  }
+
+  a.btn,
+  button,
+  .btn {
+    min-height: 44px;
+  }
+
+  /* Bigger touch target for the carousel arrows */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 16%;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-img {
+    height: 62vh;
+    height: 62dvh;
+  }
+
+  .category-card img {
+    height: 62vh;
+    height: 62dvh;
+    min-height: 320px;
+  }
+}
+
+
+
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* On the 2-columns-per-row mobile grid, cards are much narrower than
+   on desktop, so the same 260px height reads as an oddly tall,
+   narrow sliver. Shorten it in proportion to the card width. */
+@media (max-width: 768px) and (min-width: 481px) {
+  .product-img {
+    height: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-img {
+    height: 170px;
+  }
+}
+
+.product-info {
+  padding: 15px;
+}
+
+.product-title {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.product-short {
+  margin: 0;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+
+
+.product-modal {
+  display: none;
+
+  position: fixed;
+  z-index: 9999;
+
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.75);
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px;
+}
+
+
+.product-modal-content {
+  position: relative;
+
+  width: 90%;
+  max-width: 1000px;
+
+  max-height: 90vh;
+
+  background: #fff;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  display: flex;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+
+  animation: popup 0.25s ease;
+}
+
+
+
+
+.modal-image-container {
+  width: 50%;
+  background: #eee;
+}
+
+.modal-image-container img {
+  width: 100%;
+  height: 100%;
+
+  min-height: 550px;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+
+
+
+.modal-info {
+  width: 50%;
+
+  padding: 60px 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-category {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.modal-info h2 {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 2.5rem;
+
+  margin-bottom: 20px;
+}
+
+.modal-info p {
+  color: #555;
+}
+
+.modal-price {
+  font-weight: bold;
+  font-size: 1.1rem;
+
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.modal-made {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+
+
+
+.close-modal {
+  position: absolute;
+
+  top: 15px;
+  right: 20px;
+
+  z-index: 10;
+
+  width: 40px;
+  height: 40px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  font-size: 28px;
+
+  line-height: 1;
+
+  cursor: pointer;
+}
+
+
+
+
+@keyframes popup {
+
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  .product-modal {
+    padding: 15px;
+  }
+
+  .product-modal-content {
+    width: 100%;
+    max-height: 90vh;
+
+    display: block;
+
+    overflow-y: auto;
+  }
+
+  .modal-image-container {
+    width: 100%;
+  }
+
+  .modal-image-container img {
+    width: 100%;
+    height: 300px;
+    min-height: 0;
+  }
+
+  .modal-info {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .modal-info h2 {
+    font-size: 2rem;
+  }
+
+  
+
+}
