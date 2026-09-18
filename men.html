@@ -76,6 +76,8 @@
 
 </section>
 
+<section class="py-5">
+
   <div class="container">
 
     <div class="row justify-content-center text-center">
@@ -96,260 +98,711 @@
 
 </section>
 
-<h1 class="Textile">Textiles</h1>
-
 <section class="pb-5">
 
   <div class="container">
 
-    <div class="row g-4">
+    <!-- Quick jump nav: scrolls to a section header. Add a matching
+         <a> here whenever a new category is added below. -->
+    <nav class="category-nav" aria-label="Product categories">
+      <a href="#readyMadeHeading">Ready Made</a>
+      <a href="#madeToOrderHeading">Made to Order</a>
+      <a href="#textilesHeading">Textiles</a>
+      <a href="#accessoriesHeading">Accessories</a>
+    </nav>
 
-      <div class="col-6 col-md-4 col-lg-3">
+    <div class="accordion category-accordion" id="menCategoryAccordion">
 
-        <div class="product-card"
-             onclick="openProduct(this)"
-             data-name="Getzner"
-             data-color="Yellow"
-             data-image="textile images/WhatsApp Image 2026-09-10 at 2.07.41 PM (2).webp"
-             data-description="Quality based Getzner textile available at Nina's Boutique.">
+      <!-- ================= READY MADE ================= -->
+      <div class="accordion-item" id="readyMadeHeading">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseReadyMade"
+                  aria-expanded="true" aria-controls="collapseReadyMade">
+            Ready Made
+          </button>
+        </h2>
+        <div id="collapseReadyMade" class="accordion-collapse collapse show"
+             data-bs-parent="#menCategoryAccordion">
+          <div class="accordion-body">
+            <div class="row g-4">
 
-          <img src="textile images/WhatsApp Image 2026-09-10 at 2.07.41 PM (2).webp"
-               class="product-img"
-               alt="Getzner Yellow"
-               loading="lazy"
-               decoding="async">
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="placeholder-card">
+                  <div class="placeholder-img"><i class="bi bi-image"></i><span>Coming Soon</span></div>
+                  <div class="product-info">
+                    <h6 class="product-title">Ready Made Item 1</h6>
+                    <p class="product-short">Photo &amp; details coming soon</p>
+                  </div>
+                </div>
+              </div>
 
-          <div class="product-info">
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="placeholder-card">
+                  <div class="placeholder-img"><i class="bi bi-image"></i><span>Coming Soon</span></div>
+                  <div class="product-info">
+                    <h6 class="product-title">Ready Made Item 2</h6>
+                    <p class="product-short">Photo &amp; details coming soon</p>
+                  </div>
+                </div>
+              </div>
 
-            <h6 class="product-title">
-              Getzner
-            </h6>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="placeholder-card">
+                  <div class="placeholder-img"><i class="bi bi-image"></i><span>Coming Soon</span></div>
+                  <div class="product-info">
+                    <h6 class="product-title">Ready Made Item 3</h6>
+                    <p class="product-short">Photo &amp; details coming soon</p>
+                  </div>
+                </div>
+              </div>
 
-            <p class="product-short">
-              Premium Getzner Fabric
-            </p>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="placeholder-card">
+                  <div class="placeholder-img"><i class="bi bi-image"></i><span>Coming Soon</span></div>
+                  <div class="product-info">
+                    <h6 class="product-title">Ready Made Item 4</h6>
+                    <p class="product-short">Photo &amp; details coming soon</p>
+                  </div>
+                </div>
+              </div>
 
+            </div>
           </div>
-
         </div>
-
       </div>
 
-      <div class="col-6 col-md-4 col-lg-3">
+      <!-- ================= MADE TO ORDER ================= -->
+      <div class="accordion-item" id="madeToOrderHeading">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseMadeToOrder"
+                  aria-expanded="false" aria-controls="collapseMadeToOrder">
+            Made to Order
+          </button>
+        </h2>
+        <div id="collapseMadeToOrder" class="accordion-collapse collapse"
+             data-bs-parent="#menCategoryAccordion">
+          <div class="accordion-body">
+            <div class="row g-4">
 
-        <div class="product-card"
-             onclick="openProduct(this)"
-             data-name="Getzner"
-             data-color="Light Blue"
-             data-image="textile images/Light Blue.webp"
-             data-description="Quality based Getzner textile available at Nina's Boutique.">
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="placeholder-card">
+                  <div class="placeholder-img"><i class="bi bi-image"></i><span>Coming Soon</span></div>
+                  <div class="product-info">
+                    <h6 class="product-title">Design 1</h6>
+                    <p class="product-short">Photo &amp; details coming soon</p>
+                  </div>
+                </div>
+              </div>
 
-          <img src="textile images/Light Blue.webp"
-               class="product-img"
-               alt="Getzner Light Blue"
-               loading="lazy"
-               decoding="async">
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="placeholder-card">
+                  <div class="placeholder-img"><i class="bi bi-image"></i><span>Coming Soon</span></div>
+                  <div class="product-info">
+                    <h6 class="product-title">Design 2</h6>
+                    <p class="product-short">Photo &amp; details coming soon</p>
+                  </div>
+                </div>
+              </div>
 
-          <div class="product-info">
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="placeholder-card">
+                  <div class="placeholder-img"><i class="bi bi-image"></i><span>Coming Soon</span></div>
+                  <div class="product-info">
+                    <h6 class="product-title">Design 3</h6>
+                    <p class="product-short">Photo &amp; details coming soon</p>
+                  </div>
+                </div>
+              </div>
 
-            <h6 class="product-title">
-              Getzner
-            </h6>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="placeholder-card">
+                  <div class="placeholder-img"><i class="bi bi-image"></i><span>Coming Soon</span></div>
+                  <div class="product-info">
+                    <h6 class="product-title">Design 4</h6>
+                    <p class="product-short">Photo &amp; details coming soon</p>
+                  </div>
+                </div>
+              </div>
 
-            <p class="product-short">
-              Premium Getzner Fabric
-            </p>
-
+            </div>
           </div>
-
         </div>
-
       </div>
 
-      <div class="col-6 col-md-4 col-lg-3">
+     
+      <div class="accordion-item" id="textilesHeading">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseTextiles"
+                  aria-expanded="false" aria-controls="collapseTextiles">
+            Textiles
+          </button>
+        </h2>
+        <div id="collapseTextiles" class="accordion-collapse collapse"
+             data-bs-parent="#menCategoryAccordion">
+          <div class="accordion-body">
+            <div class="row g-4">
 
-        <div class="product-card"
-             onclick="openProduct(this)"
-             data-name="Getzner"
-             data-color="Blue"
-             data-image="textile images/WhatsApp Image 2026-09-10 at 2.07.39 PM (1).webp"
-             data-description="Quality based Getzner textile available at Nina's Boutique.">
+              <div class="col-6 col-md-4 col-lg-3">
 
-          <img src="textile images/WhatsApp Image 2026-09-10 at 2.07.39 PM (1).webp"
-               class="product-img"
-               alt="Getzner Blue"
-               loading="lazy"
-               decoding="async">
+                <div class="product-card"
+                     onclick="openProduct(this)"
+                     data-name="Getzner"
+                     data-color="Yellow"
+                     data-image="textile images/WhatsApp Image 2026-09-10 at 2.07.41 PM (2).webp"
+                     data-description="Quality based Getzner textile available at Nina's Boutique.">
 
-          <div class="product-info">
+                  <img src="textile images/WhatsApp Image 2026-09-10 at 2.07.41 PM (2).webp"
+                       class="product-img"
+                       alt="Getzner Yellow"
+                       loading="lazy"
+                       decoding="async">
 
-            <h6 class="product-title">
-              Getzner
-            </h6>
+                  <div class="product-info">
 
-            <p class="product-short">
-              Premium Getzner Fabric
-            </p>
+                    <h6 class="product-title">
+                      Getzner
+                    </h6>
 
+                    <p class="product-short">
+                      Premium Getzner Fabric
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="product-card"
+                     onclick="openProduct(this)"
+                     data-name="Getzner"
+                     data-color="Light Blue"
+                     data-image="textile images/Light Blue.webp"
+                     data-description="Quality based Getzner textile available at Nina's Boutique.">
+
+                  <img src="textile images/Light Blue.webp"
+                       class="product-img"
+                       alt="Getzner Light Blue"
+                       loading="lazy"
+                       decoding="async">
+
+                  <div class="product-info">
+
+                    <h6 class="product-title">
+                      Getzner
+                    </h6>
+
+                    <p class="product-short">
+                      Premium Getzner Fabric
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="product-card"
+                     onclick="openProduct(this)"
+                     data-name="Getzner"
+                     data-color="Blue"
+                     data-image="textile images/WhatsApp Image 2026-09-10 at 2.07.39 PM (1).webp"
+                     data-description="Quality based Getzner textile available at Nina's Boutique.">
+
+                  <img src="textile images/WhatsApp Image 2026-09-10 at 2.07.39 PM (1).webp"
+                       class="product-img"
+                       alt="Getzner Blue"
+                       loading="lazy"
+                       decoding="async">
+
+                  <div class="product-info">
+
+                    <h6 class="product-title">
+                      Getzner
+                    </h6>
+
+                    <p class="product-short">
+                      Premium Getzner Fabric
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="product-card"
+                     onclick="openProduct(this)"
+                     data-name="Getzner"
+                     data-color="Green"
+                     data-image="textile images/WhatsApp Image 2026-09-10 at 2.07.38 PM.webp"
+                     data-description="Quality based Getzner textile available at Nina's Boutique.">
+
+                  <img src="textile images/WhatsApp Image 2026-09-10 at 2.07.38 PM.webp"
+                       class="product-img"
+                       alt="Getzner Green"
+                       loading="lazy"
+                       decoding="async">
+
+                  <div class="product-info">
+
+                    <h6 class="product-title">
+                      Getzner
+                    </h6>
+
+                    <p class="product-short">
+                      Premium Getzner Fabric
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="product-card"
+                     onclick="openProduct(this)"
+                     data-name="Getzner"
+                     data-color="Red"
+                     data-image="textile images/Red.webp"
+                     data-description="Quality based Getzner textile available at Nina's Boutique.">
+
+                  <img src="textile images/Red.webp"
+                       class="product-img"
+                       alt="Getzner Red"
+                       loading="lazy"
+                       decoding="async">
+
+                  <div class="product-info">
+
+                    <h6 class="product-title">
+                      Getzner
+                    </h6>
+
+                    <p class="product-short">
+                      Premium Getzner Fabric
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="product-card"
+                     onclick="openProduct(this)"
+                     data-name="Getzner"
+                     data-color="Purple"
+                     data-image="textile images/Purple.webp"
+                     data-description="Quality based Getzner textile available at Nina's Boutique.">
+
+                  <img src="textile images/Purple.webp"
+                       class="product-img"
+                       alt="Getzner Purple"
+                       loading="lazy"
+                       decoding="async">
+
+                  <div class="product-info">
+
+                    <h6 class="product-title">
+                      Getzner
+                    </h6>
+
+                    <p class="product-short">
+                      Premium Getzner Fabric
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="product-card"
+                     onclick="openProduct(this)"
+                     data-name="Getzner"
+                     data-color="Torquoise"
+                     data-image="textile images/Torquoise.webp"
+                     data-description="Quality based Getzner textile available at Nina's Boutique.">
+
+                  <img src="textile images/Torquoise.webp"
+                       class="product-img"
+                       alt="Getzner Torquoise"
+                       loading="lazy"
+                       decoding="async">
+
+                  <div class="product-info">
+
+                    <h6 class="product-title">
+                      Getzner
+                    </h6>
+
+                    <p class="product-short">
+                      Premium Getzner Fabric
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="product-card"
+                     onclick="openProduct(this)"
+                     data-name="Getzner"
+                     data-color="Bright Yellow"
+                     data-image="textile images/Bright yellow.webp"
+                     data-description="Quality based Getzner textile available at Nina's Boutique.">
+
+                  <img src="textile images/Bright yellow.webp"
+                       class="product-img"
+                       alt="Getzner Bright yellow"
+                       loading="lazy"
+                       decoding="async">
+
+                  <div class="product-info">
+
+                    <h6 class="product-title">
+                      Getzner
+                    </h6>
+
+                    <p class="product-short">
+                      Premium Getzner Fabric
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="product-card"
+                     onclick="openProduct(this)"
+                     data-name="Getzner"
+                     data-color="Cream"
+                     data-image="textile images/Cream.webp"
+                     data-description="Quality based Getzner textile available at Nina's Boutique.">
+
+                  <img src="textile images/Cream.webp"
+                       class="product-img"
+                       alt="Getzner Cream"
+                       loading="lazy"
+                       decoding="async">
+
+                  <div class="product-info">
+
+                    <h6 class="product-title">
+                      Getzner
+                    </h6>
+
+                    <p class="product-short">
+                      Premium Getzner Fabric
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="product-card"
+                     onclick="openProduct(this)"
+                     data-name="Getzner"
+                     data-color="Dark Brown"
+                     data-image="textile images/Dark brown.webp"
+                     data-description="Quality based Getzner textile available at Nina's Boutique.">
+
+                  <img src="textile images/Dark brown.webp"
+                       class="product-img"
+                       alt="Getzner Dark brown"
+                       loading="lazy"
+                       decoding="async">
+
+                  <div class="product-info">
+
+                    <h6 class="product-title">
+                      Getzner
+                    </h6>
+
+                    <p class="product-short">
+                      Premium Getzner Fabric
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="product-card"
+                     onclick="openProduct(this)"
+                     data-name="Getzner"
+                     data-color="Golden Yellow"
+                     data-image="textile images/Golden yellow.webp"
+                     data-description="Quality based Getzner textile available at Nina's Boutique.">
+
+                  <img src="textile images/Golden yellow.webp"
+                       class="product-img"
+                       alt="Getzner Golden yellow "
+                       loading="lazy"
+                       decoding="async">
+
+                  <div class="product-info">
+
+                    <h6 class="product-title">
+                      Getzner
+                    </h6>
+
+                    <p class="product-short">
+                      Premium Getzner Fabric
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="product-card"
+                     onclick="openProduct(this)"
+                     data-name="Getzner"
+                     data-color="Hot Pink"
+                     data-image="textile images/Hot pink.webp"
+                     data-description="Quality based Getzner textile available at Nina's Boutique.">
+
+                  <img src="textile images/Hot pink.webp"
+                       class="product-img"
+                       alt="Getzner "
+                       loading="lazy"
+                       decoding="async">
+
+                  <div class="product-info">
+
+                    <h6 class="product-title">
+                      Getzner
+                    </h6>
+
+                    <p class="product-short">
+                      Premium Getzner Fabric
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="product-card"
+                     onclick="openProduct(this)"
+                     data-name="Getzner"
+                     data-color="Navy Blue"
+                     data-image="textile images/Navy blue.webp"
+                     data-description="Quality based Getzner textile available at Nina's Boutique.">
+
+                  <img src="textile images/Navy blue.webp"
+                       class="product-img"
+                       alt="Getzner Navy blue "
+                       loading="lazy"
+                       decoding="async">
+
+                  <div class="product-info">
+
+                    <h6 class="product-title">
+                      Getzner
+                    </h6>
+
+                    <p class="product-short">
+                      Premium Getzner Fabric
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="product-card"
+                     onclick="openProduct(this)"
+                     data-name="Getzner"
+                     data-color="Ocean Blue"
+                     data-image="textile images/Ocean blue.webp"
+                     data-description="Quality based Getzner textile available at Nina's Boutique.">
+
+                  <img src="textile images/Ocean blue.webp"
+                       class="product-img"
+                       alt="Getzner Ocean blue"
+                       loading="lazy"
+                       decoding="async">
+
+                  <div class="product-info">
+
+                    <h6 class="product-title">
+                      Getzner
+                    </h6>
+
+                    <p class="product-short">
+                      Premium Getzner Fabric
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="product-card"
+                     onclick="openProduct(this)"
+                     data-name="Getzner"
+                     data-color="Royal Blue"
+                     data-image="textile images/Royal blue.webp"
+                     data-description="Quality based Getzner textile available at Nina's Boutique.">
+
+                  <img src="textile images/Royal blue.webp"
+                       class="product-img"
+                       alt="Getzner Royal blue "
+                       loading="lazy"
+                       decoding="async">
+
+                  <div class="product-info">
+
+                    <h6 class="product-title">
+                      Getzner
+                    </h6>
+
+                    <p class="product-short">
+                      Premium Getzner Fabric
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-3">
+
+                <div class="product-card"
+                     onclick="openProduct(this)"
+                     data-name="Getzner"
+                     data-color="Azure"
+                     data-image="textile images/very light blue.webp"
+                     data-description="Quality based Getzner textile available at Nina's Boutique.">
+
+                  <img src="textile images/very light blue.webp"
+                       class="product-img"
+                       alt="Getzner Azure"
+                       loading="lazy"
+                       decoding="async">
+
+                  <div class="product-info">
+
+                    <h6 class="product-title">
+                      Getzner
+                    </h6>
+
+                    <p class="product-short">
+                      Premium Getzner Fabric
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
           </div>
-
         </div>
-
       </div>
 
-      <div class="col-6 col-md-4 col-lg-3">
+      <!-- ================= ACCESSORIES ================= -->
+      <div class="accordion-item" id="accessoriesHeading">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseAccessories"
+                  aria-expanded="false" aria-controls="collapseAccessories">
+            Accessories
+          </button>
+        </h2>
+        <div id="collapseAccessories" class="accordion-collapse collapse"
+             data-bs-parent="#menCategoryAccordion">
+          <div class="accordion-body">
+            <div class="row g-4">
 
-        <div class="product-card"
-             onclick="openProduct(this)"
-             data-name="Getzner"
-             data-color="Green"
-             data-image="textile images/WhatsApp Image 2026-09-10 at 2.07.38 PM.webp"
-             data-description="Quality based Getzner textile available at Nina's Boutique.">
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="placeholder-card">
+                  <div class="placeholder-img"><i class="bi bi-image"></i><span>Coming Soon</span></div>
+                  <div class="product-info">
+                    <h6 class="product-title">Accessory 1</h6>
+                    <p class="product-short">Photo &amp; details coming soon</p>
+                  </div>
+                </div>
+              </div>
 
-          <img src="textile images/WhatsApp Image 2026-09-10 at 2.07.38 PM.webp"
-               class="product-img"
-               alt="Getzner Green"
-               loading="lazy"
-               decoding="async">
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="placeholder-card">
+                  <div class="placeholder-img"><i class="bi bi-image"></i><span>Coming Soon</span></div>
+                  <div class="product-info">
+                    <h6 class="product-title">Accessory 2</h6>
+                    <p class="product-short">Photo &amp; details coming soon</p>
+                  </div>
+                </div>
+              </div>
 
-          <div class="product-info">
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="placeholder-card">
+                  <div class="placeholder-img"><i class="bi bi-image"></i><span>Coming Soon</span></div>
+                  <div class="product-info">
+                    <h6 class="product-title">Accessory 3</h6>
+                    <p class="product-short">Photo &amp; details coming soon</p>
+                  </div>
+                </div>
+              </div>
 
-            <h6 class="product-title">
-              Getzner
-            </h6>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="placeholder-card">
+                  <div class="placeholder-img"><i class="bi bi-image"></i><span>Coming Soon</span></div>
+                  <div class="product-info">
+                    <h6 class="product-title">Accessory 4</h6>
+                    <p class="product-short">Photo &amp; details coming soon</p>
+                  </div>
+                </div>
+              </div>
 
-            <p class="product-short">
-              Premium Getzner Fabric
-            </p>
-
+            </div>
           </div>
-
         </div>
-
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-3">
-
-        <div class="product-card"
-             onclick="openProduct(this)"
-             data-name="Getzner"
-             data-color="Red"
-             data-image="textile images/Red.webp"
-             data-description="Quality based Getzner textile available at Nina's Boutique.">
-
-          <img src="textile images/Red.webp"
-               class="product-img"
-               alt="Getzner Red"
-               loading="lazy"
-               decoding="async">
-
-          <div class="product-info">
-
-            <h6 class="product-title">
-              Getzner
-            </h6>
-
-            <p class="product-short">
-              Premium Getzner Fabric
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-3">
-
-        <div class="product-card"
-             onclick="openProduct(this)"
-             data-name="Getzner"
-             data-color="Purple"
-             data-image="textile images/Purple.webp"
-             data-description="Quality based Getzner textile available at Nina's Boutique.">
-
-          <img src="textile images/Purple.webp"
-               class="product-img"
-               alt="Getzner Purple"
-               loading="lazy"
-               decoding="async">
-
-          <div class="product-info">
-
-            <h6 class="product-title">
-              Getzner
-            </h6>
-
-            <p class="product-short">
-              Premium Getzner Fabric
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-3">
-
-        <div class="product-card"
-             onclick="openProduct(this)"
-             data-name="Getzner"
-             data-color="Torquoise"
-             data-image="textile images/Torquoise.webp"
-             data-description="Quality based Getzner textile available at Nina's Boutique.">
-
-          <img src="textile images/Torquoise.webp"
-               class="product-img"
-               alt="Getzner Torquoise"
-               loading="lazy"
-               decoding="async">
-
-          <div class="product-info">
-
-            <h6 class="product-title">
-              Getzner
-            </h6>
-
-            <p class="product-short">
-              Premium Getzner Fabric
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-3">
-
-        <div class="product-card"
-             onclick="openProduct(this)"
-             data-name="Getzner"
-             data-color="Azure"
-             data-image="textile images/very light blue.webp"
-             data-description="Quality based Getzner textile available at Nina's Boutique.">
-
-          <img src="textile images/very light blue.webp"
-               class="product-img"
-               alt="Getzner Azure"
-               loading="lazy"
-               decoding="async">
-
-          <div class="product-info">
-
-            <h6 class="product-title">
-              Getzner
-            </h6>
-
-            <p class="product-short">
-              Premium Getzner Fabric
-            </p>
-
-          </div>
-
-        </div>
-
       </div>
 
     </div>
@@ -359,6 +812,7 @@
 </section>
 
 <div id="productModal" class="product-modal">
+
 
   <div class="product-modal-content">
 
