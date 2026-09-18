@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 
 body {
@@ -204,9 +208,7 @@ img {
   }
 }
 
-/* About section photo: sized on its own terms (not the tall
-   full-bleed treatment used for hero/category banners) so it sits
-   comfortably next to the bio text instead of towering over it. */
+
 .about-photo {
   border-radius: 12px;
   overflow: hidden;
@@ -233,7 +235,7 @@ img {
   }
 }
 
-/* ---------- Contact page ---------- */
+
 
 .contact-hero {
   background: linear-gradient(135deg, #1c1a18 0%, #3a332c 55%, #5b4c3d 100%);
@@ -376,7 +378,7 @@ img {
   }
 }
 
-/* Tailor avatar placeholder (replaces broken empty img src) */
+
 .avatar-placeholder {
   width: 90px;
   height: 90px;
@@ -391,7 +393,7 @@ img {
 }
 
 
-/* Tablet gap fix: scale hero/category images down before the phone breakpoint kicks in */
+
 @media (max-width: 991.98px) and (min-width: 769px) {
   .hero-img {
     height: 75vh;
@@ -405,13 +407,7 @@ img {
   }
 }
 
-/* "Our Collection" grid: keep the Men/Women photos side by side at
-   every width, same as desktop. Below tablet size the two banner
-   images no longer have room to stay tall without becoming thin,
-   distorted-looking strips, so their height is scaled down here to
-   keep a sensible proportion for a 2-up layout. This only touches
-   the Our Collection grid — the hero carousel and the single About
-   section photo keep their full-bleed height everywhere. */
+
 @media (max-width: 768px) {
   .collection-grid .category-card img {
     height: 46vw;
@@ -537,15 +533,133 @@ img {
    on desktop, so the same 260px height reads as an oddly tall,
    narrow sliver. Shorten it in proportion to the card width. */
 @media (max-width: 768px) and (min-width: 481px) {
-  .product-img {
+  .product-img,
+  .placeholder-img {
     height: 220px;
   }
 }
 
 @media (max-width: 480px) {
-  .product-img {
+  .product-img,
+  .placeholder-img {
     height: 170px;
   }
+}
+
+/* ---------- Category quick-nav + accordion (men/women pages) ---------- */
+
+.category-nav {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 4px 4px 18px;
+  margin-bottom: 0.5rem;
+  scrollbar-width: none;
+}
+
+.category-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.category-nav a {
+  flex: 0 0 auto;
+  padding: 0.5rem 1.15rem;
+  border-radius: 999px;
+  background: #fff;
+  color: #2a2a2a;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.category-nav a:hover,
+.category-nav a:focus {
+  background: #a89f94;
+  color: #fff;
+}
+
+/* Offset for the sticky navbar when a chip jump-scrolls to a section */
+.category-accordion .accordion-item {
+  scroll-margin-top: 90px;
+}
+
+.category-accordion .accordion-item {
+  border: none;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.category-accordion .accordion-button {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.05rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  background: #2a2a2a;
+  color: #fff;
+  padding: 1.1rem 1.5rem;
+}
+
+.category-accordion .accordion-button:not(.collapsed) {
+  background: #a89f94;
+  color: #fff;
+  box-shadow: none;
+}
+
+.category-accordion .accordion-button:focus {
+  box-shadow: none;
+}
+
+.category-accordion .accordion-button::after {
+  filter: invert(1) grayscale(100%) brightness(2.2);
+}
+
+.category-accordion .accordion-body {
+  padding: 1.75rem 1.25rem;
+}
+
+/* Placeholder cards: same footprint as a real product-card so the
+   grid lays out identically once real photos replace them, but
+   visually distinct (dashed box) so they're obviously not-yet-real. */
+.placeholder-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.placeholder-img {
+  width: 100%;
+  height: 260px;
+  background: repeating-linear-gradient(
+    135deg,
+    #f4f2ef,
+    #f4f2ef 10px,
+    #ece8e2 10px,
+    #ece8e2 20px
+  );
+  border: 2px dashed #c9c2b8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #a49a8c;
+}
+
+.placeholder-img i {
+  font-size: 1.7rem;
+  margin-bottom: 6px;
+}
+
+.placeholder-img span {
+  font-size: 0.68rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .product-info {
